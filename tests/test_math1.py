@@ -18,6 +18,7 @@ products = [
   (2.5, 6.7, 16.75)     # floats
 ]
 
+@pytest.mark.math
 @pytest.mark.parametrize('a, b, product', products)
 def test_multiplication(a, b, product):
   assert a * b == product
